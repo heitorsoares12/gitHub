@@ -1,5 +1,9 @@
 @import "@angular/material/theming";
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+@import "../src/assets/css/table-prime-layout-aggrid.css";
 @include mat-core();
+
 
 $custom-app-primary: mat-palette($mat-deep-purple, 500);
 $custom-app-secondary: mat-palette($mat-deep-purple, 900);
@@ -16,9 +20,7 @@ $custom-theme: mat-dark-theme(
 html,
 body {
   height: 100%;
-}
-body {
-  background-color: #424242;
+  background-color: #111111;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
