@@ -69,6 +69,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "crud-angular:build"
+          },
           "configurations": {
             "production": {
               "browserTarget": "crud-angular:build:production"
@@ -102,7 +105,9 @@
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/cypress/bin/cypress run --browser chrome"
+            ]
           }
         },
         "lint": {
